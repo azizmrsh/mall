@@ -1,0 +1,77 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace mall
+{
+    public partial class Form6 : Form
+    {
+        List<string> dep = new List<string>();
+        public static List<string> emi = new List<string>();
+        public static List<string> emp = new List<string>(); 
+
+        public Form6()
+        {
+            InitializeComponent();
+        }
+
+
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == 0)
+            { 
+
+            }
+            else if (comboBox1.SelectedIndex == 1) { }
+            else if (comboBox1.SelectedIndex == 2) { }
+        }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
+            dep.Add("Electronic");  //1
+            dep.Add("Clothes");    //2
+            dep.Add("Grosery");   //3
+
+            emi.Add("11");
+            emp.Add("1111");
+            emi.Add("12");
+            emp.Add("1212");
+            emi.Add("21");
+            emp.Add("2121");
+            emi.Add("22");
+            emp.Add("2222");
+            emi.Add("31");
+            emp.Add("3131");
+            emi.Add("32");
+            emp.Add("3232");
+
+            if (comboBox1.SelectedItem.ToString()[0] == '1')
+            {
+                textBox2.Text = "Electronic";
+                
+            }
+            else if (comboBox1.SelectedItem.ToString()[0] == '2')
+            {
+                textBox2.Text = "Clothes";
+               
+            }
+            else if (comboBox1.SelectedItem.ToString()[0] == '3')
+            {
+                textBox2.Text = "Grosery";
+                
+            }
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBox1.Text = comboBox1.SelectedItem.ToString();
+        }
+    }
+}
