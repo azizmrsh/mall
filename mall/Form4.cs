@@ -9,6 +9,7 @@ namespace mall
     [DebuggerDisplay("{" + nameof(GetDebuggerDisplay) + "(),nq}")]
     public partial class Form4 : Form
     {
+        Form1 form1 = new Form1();
         private string employeeID;
 
         public static List<string> ELC = new List<string>();
@@ -48,6 +49,14 @@ namespace mall
         {
 
         }
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //item
+        }
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //price
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -83,7 +92,26 @@ namespace mall
 
             MessageBox.Show("Added successfully.");
 
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //update
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            form1.Show();
+            this.Hide();
+            //logout
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //remove
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //confirm
         }
     }
 }
