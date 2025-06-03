@@ -46,28 +46,31 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(14, 15);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(142, 452);
+            this.listBox1.Size = new System.Drawing.Size(279, 324);
             this.listBox1.TabIndex = 0;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox4
             // 
             this.listBox4.FormattingEnabled = true;
-            this.listBox4.ItemHeight = 16;
-            this.listBox4.Location = new System.Drawing.Point(807, 12);
+            this.listBox4.ItemHeight = 20;
+            this.listBox4.Location = new System.Drawing.Point(824, 15);
+            this.listBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(142, 452);
+            this.listBox4.Size = new System.Drawing.Size(245, 284);
             this.listBox4.TabIndex = 3;
             this.listBox4.SelectedIndexChanged += new System.EventHandler(this.listBox4_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(20, 508);
+            this.button1.Location = new System.Drawing.Point(14, 389);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 23);
+            this.button1.Size = new System.Drawing.Size(279, 62);
             this.button1.TabIndex = 4;
             this.button1.Text = "Add to cart";
             this.button1.UseVisualStyleBackColor = true;
@@ -75,9 +78,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(771, 544);
+            this.button2.Location = new System.Drawing.Point(867, 427);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 23);
+            this.button2.Size = new System.Drawing.Size(173, 57);
             this.button2.TabIndex = 5;
             this.button2.Text = "clear cart";
             this.button2.UseVisualStyleBackColor = true;
@@ -85,9 +89,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(771, 508);
+            this.button3.Location = new System.Drawing.Point(867, 346);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(154, 23);
+            this.button3.Size = new System.Drawing.Size(173, 51);
             this.button3.TabIndex = 6;
             this.button3.Text = "remove from cart";
             this.button3.UseVisualStyleBackColor = true;
@@ -96,26 +101,27 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(804, 12);
+            this.label2.Location = new System.Drawing.Point(820, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 16);
+            this.label2.Size = new System.Drawing.Size(36, 20);
             this.label2.TabIndex = 8;
             this.label2.Text = "cart";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 12);
+            this.label3.Location = new System.Drawing.Point(14, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 16);
+            this.label3.Size = new System.Drawing.Size(71, 20);
             this.label3.TabIndex = 9;
             this.label3.Text = "products";
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(402, 508);
+            this.button4.Location = new System.Drawing.Point(452, 608);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(134, 23);
+            this.button4.Size = new System.Drawing.Size(165, 56);
             this.button4.TabIndex = 10;
             this.button4.Text = "confirm";
             this.button4.UseVisualStyleBackColor = true;
@@ -124,9 +130,10 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(18, 21);
+            this.checkBox1.Location = new System.Drawing.Point(20, 26);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(77, 20);
+            this.checkBox1.Size = new System.Drawing.Size(91, 24);
             this.checkBox1.TabIndex = 11;
             this.checkBox1.Text = "Grocery";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -135,9 +142,10 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(18, 47);
+            this.checkBox2.Location = new System.Drawing.Point(20, 59);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(74, 20);
+            this.checkBox2.Size = new System.Drawing.Size(89, 24);
             this.checkBox2.TabIndex = 12;
             this.checkBox2.Text = "Clothes";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -146,9 +154,10 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(18, 73);
+            this.checkBox3.Location = new System.Drawing.Point(20, 91);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(95, 20);
+            this.checkBox3.Size = new System.Drawing.Size(113, 24);
             this.checkBox3.TabIndex = 13;
             this.checkBox3.Text = "Electronics";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -159,9 +168,11 @@
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Location = new System.Drawing.Point(402, 41);
+            this.groupBox1.Location = new System.Drawing.Point(331, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 118);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(156, 148);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -169,9 +180,9 @@
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(961, 668);
+            this.ClientSize = new System.Drawing.Size(1081, 835);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label3);
@@ -181,6 +192,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox4);
             this.Controls.Add(this.listBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);

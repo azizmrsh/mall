@@ -21,6 +21,21 @@ namespace mall
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string selectedItem = listBox1.SelectedItem.ToString();
+
+            if (checkBox1.Checked && Form4.GRO.Contains(selectedItem))
+            {
+                total += Form4.PGRO[Form4.GRO.IndexOf(selectedItem)];
+            }
+            else if (checkBox2.Checked && Form4.CLO.Contains(selectedItem))
+            {
+                total += Form4.PCLO[Form4.CLO.IndexOf(selectedItem)];
+            }
+            else if (checkBox3.Checked && Form4.ELC.Contains(selectedItem))
+            {
+                total += Form4.PELC[Form4.ELC.IndexOf(selectedItem)];
+            }
+
             listBox4.Items.Add(listBox1.SelectedItem);
             Copy.Add(listBox4.SelectedItem.ToString());
             
@@ -37,6 +52,20 @@ namespace mall
         private void button3_Click(object sender, EventArgs e)
         {
             listBox4.Items.Remove(listBox4.SelectedItem);
+            string selectedItem = listBox4.SelectedItem.ToString();
+
+            if (checkBox1.Checked && Form4.GRO.Contains(selectedItem))
+            {
+                total -= Form4.PGRO[Form4.GRO.IndexOf(selectedItem)];
+            }
+            else if (checkBox2.Checked && Form4.CLO.Contains(selectedItem))
+            {
+                total -= Form4.PCLO[Form4.CLO.IndexOf(selectedItem)];
+            }
+            else if (checkBox3.Checked && Form4.ELC.Contains(selectedItem))
+            {
+                total -= Form4.PELC[Form4.ELC.IndexOf(selectedItem)];
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
