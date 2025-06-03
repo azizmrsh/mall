@@ -17,11 +17,13 @@ namespace mall
             InitializeComponent();
         }
         public static Form1 f1 = new Form1();
-        List<string> usn = new List<string>();
-        List<string> usp = new List<string>();
+        public static List<string> usn = new List<string>();
+        public static List<string> usp = new List<string>();
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            f1 = this;
+            textBox1.Text = Form2.urn;
+            textBox2.Text = Form2.urp;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -80,6 +82,7 @@ namespace mall
             {
                 MessageBox.Show("Unvalide user name or password");
             }
+
 
 
         }
