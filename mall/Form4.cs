@@ -23,7 +23,19 @@ namespace mall
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            ELC.Add("laptop");
+            ELC.Add("Laptop");
+            ELC.Add("Mobile");
+            ELC.Add("Microwave");
+            ELC.Add("Fridge");
+            CLO.Add("Shoes");
+            CLO.Add("T-shirt");
+            CLO.Add("Jacket");
+            CLO.Add("Pant");
+            GRO.Add("Flour");
+            GRO.Add("Rice");
+            GRO.Add("Suger");
+            GRO.Add("Salt");
+
         }
     }
 }
