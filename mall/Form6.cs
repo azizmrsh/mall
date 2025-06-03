@@ -64,38 +64,27 @@ namespace mall
 
         private void Form6_Load(object sender, EventArgs e)
         {
-            dep.Add("Electronic");  //1
-            dep.Add("Clothes");    //2
-            dep.Add("Grosery");   //3
+            comboBox1.Items.Add("Electronic");  //1
+            comboBox1.Items.Add("Clothes");    //2
+            comboBox1.Items.Add("Grosery");   //3
 
-            emi.Add("11");
-            emp.Add("1111");
-            emi.Add("12");
-            emp.Add("1212");
-            emi.Add("21");
-            emp.Add("2121");
-            emi.Add("22");
-            emp.Add("2222");
-            emi.Add("31");
-            emp.Add("3131");
-            emi.Add("32");
-            emp.Add("3232");
+            
 
-            if (comboBox1.SelectedItem.ToString()[0] == '1')
-            {
-                textBox2.Text = "Electronic";
+            //if (comboBox1.SelectedItem.ToString()[0] == '1')
+            //{
+            //    textBox2.Text = "Electronic";
                 
-            }
-            else if (comboBox1.SelectedItem.ToString()[0] == '2')
-            {
-                textBox2.Text = "Clothes";
+            //}
+            //else if (comboBox1.SelectedItem.ToString()[0] == '2')
+            //{
+            //    textBox2.Text = "Clothes";
                
-            }
-            else if (comboBox1.SelectedItem.ToString()[0] == '3')
-            {
-                textBox2.Text = "Grosery";
+            //}
+            //else if (comboBox1.SelectedItem.ToString()[0] == '3')
+            //{
+            //    textBox2.Text = "Grosery";
                 
-            }
+            //}
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -131,6 +120,7 @@ namespace mall
                 emp.Add(textBox2.Text);
                 listBox1.Items.Add(textBox1.Text);
             }
+            
             else
                 MessageBox.Show("User already exists");
         }

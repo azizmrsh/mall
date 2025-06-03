@@ -30,6 +30,9 @@ namespace mall
             Form1.usp.Add(textBox2.Text);
             urn = textBox1.Text;
             urp = textBox2.Text;
+
+            Form1.f1.Show();
+            this.Close();
         }
     }
 }

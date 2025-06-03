@@ -35,5 +35,28 @@ namespace mall
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            label2.Text = "Total: " + Form3.total.ToString() + "$";
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            label4.Text = "Delivery price : " + (Form3.total * 0.01).ToString("$");
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            label4.Text = "Sales tax : " + (Form3.total * 0.12).ToString("$");
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1.f1.Show();
+            this.Close();
+        }
     }
 }
