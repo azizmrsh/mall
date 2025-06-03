@@ -111,6 +111,7 @@ namespace mall
                 emp.Add(textBox2.Text);
                 listBox1.Items.Add(textBox1.Text);
             }
+            
             else
                 MessageBox.Show("User already exists");
         }
