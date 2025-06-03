@@ -15,6 +15,7 @@ namespace mall
         public static List<string> ELC = new List<string>();
         public static List<string> CLO = new List<string>();
         public static List<string>  GRO = new List<string>();
+        public static List<string> Copy = new List<string>();
 
         public Form4()
         {
@@ -35,6 +36,11 @@ namespace mall
             GRO.Add("Rice");
             GRO.Add("Suger");
             GRO.Add("Salt");
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
 
         }
     }
