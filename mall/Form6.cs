@@ -25,7 +25,12 @@ namespace mall
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBox1.SelectedIndex == 0)
+            { 
 
+            }
+            else if (comboBox1.SelectedIndex == 1) { }
+            else if (comboBox1.SelectedIndex == 2) { }
         }
 
         private void Form6_Load(object sender, EventArgs e)
