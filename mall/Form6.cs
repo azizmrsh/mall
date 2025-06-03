@@ -102,5 +102,17 @@ namespace mall
         {
             textBox1.Text = comboBox1.SelectedItem.ToString();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (emi.Contains(textBox1.Text) == false)
+            {
+                emi.Add(textBox1.Text);
+                emp.Add(textBox2.Text);
+                listBox1.Items.Add(textBox1.Text);
+            }
+            else
+                MessageBox.Show("User already exists");
+        }
     }
 }
