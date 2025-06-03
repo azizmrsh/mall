@@ -27,15 +27,39 @@ namespace mall
         {
             if (comboBox1.SelectedIndex == 0)
             { 
-                for (int i = 0; i < dep.Count; i++)
+                for (int i = 0; i < emi.Count; i++)
                 {
-                    if
-                    listBox1.Items.Add(emi[i].ToString());
+                    if(emi[i].ToString()[0] == '1')
+                    {
+                        listBox1.Items.Add(emi[i].ToString());
+                    }
                 }
                 
             }
-            else if (comboBox1.SelectedIndex == 1) { }
-            else if (comboBox1.SelectedIndex == 2) { }
+            else if (comboBox1.SelectedIndex == 1) 
+            {
+                for (int i = 0; i < emi.Count; i++)
+                {
+                    if (emi[i].ToString()[0] == '2')
+                    {
+                        listBox1.Items.Add(emi[i].ToString());
+                    }
+                }
+            }
+            else if (comboBox1.SelectedIndex == 2) 
+            { 
+                for (int i = 0; i < emi.Count; i++)
+                {
+                    if (emi[i].ToString()[0] == '3')
+                    {
+                        listBox1.Items.Add(emi[i].ToString());
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a valid department.");
+            }
         }
 
         private void Form6_Load(object sender, EventArgs e)
