@@ -27,7 +27,12 @@ namespace mall
         {
             if (comboBox1.SelectedIndex == 0)
             { 
-
+                for (int i = 0; i < dep.Count; i++)
+                {
+                    if
+                    listBox1.Items.Add(emi[i].ToString());
+                }
+                
             }
             else if (comboBox1.SelectedIndex == 1) { }
             else if (comboBox1.SelectedIndex == 2) { }
