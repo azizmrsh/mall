@@ -16,6 +16,9 @@ namespace mall
         public static List<string> CLO = new List<string>();
         public static List<string>  GRO = new List<string>();
         public static List<string> Copy = new List<string>();
+        public static List<float> PELC = new List<float>();
+        public static List<float> PCLO = new List<float>();
+        public static List<float> PGRO = new List<float>();
 
         public Form4()
         {
@@ -24,18 +27,30 @@ namespace mall
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            ELC.Add("Laptop");
-            ELC.Add("Mobile");
-            ELC.Add("Microwave");
-            ELC.Add("Fridge");
-            CLO.Add("Shoes");
-            CLO.Add("T-shirt");
-            CLO.Add("Jacket");
-            CLO.Add("Pant");
-            GRO.Add("Flour");
-            GRO.Add("Rice");
-            GRO.Add("Suger");
-            GRO.Add("Salt");
+            ELC.Add("Laptop    1000$");
+            PELC.Add(1000);
+            ELC.Add("Mobile    1000$");
+            PELC.Add(1000);
+            ELC.Add("Microwave  500$");
+            PELC.Add(500);
+            ELC.Add("Fridge      550$");
+            PELC.Add(550);
+            CLO.Add("Shoes        30$");
+            PCLO.Add(30);
+            CLO.Add("T-shirt       35$");
+            PCLO.Add(35);
+            CLO.Add("Jacket        65$");
+            PCLO.Add(65);
+            CLO.Add("Pant          45$");
+            PCLO.Add(45);
+            GRO.Add("Flour          7$");
+            PGRO.Add(7);
+            GRO.Add("Rice           35.5$");
+            PGRO.Add(35.5f);
+            GRO.Add("Suger           2$");
+            PGRO.Add(2);
+            GRO.Add("Salt             1$");
+            PGRO.Add(1);
 
         }
 
