@@ -21,7 +21,8 @@ namespace mall
         List<string> usp = new List<string>();
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            usn.Add("user1");
+            usp.Add("123456");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -47,7 +48,7 @@ namespace mall
                 }
             }
 
-            for (int i = 0; i < Form6.emi.Count; i++)
+            for (int i = 0; i < usn.Count; i++)
             {
                 if (usn[i] == textBox1.Text && usp[i] == textBox2.Text)
                 {

@@ -84,6 +84,15 @@ namespace mall
         private void Form3_Load(object sender, EventArgs e)
         {
             Form3 f3 = new Form3();
+            if (checkBox1.Checked)
+            {
+                for (int i = 0; i < Form4.GRO.Count; i++)
+                {
+                    listBox1.Items.Add(Form4.GRO[i]);
+
+                }
+
+            }
 
         }
 

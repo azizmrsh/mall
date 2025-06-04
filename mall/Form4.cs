@@ -16,16 +16,12 @@ namespace mall
         public static List<string> CLO = new List<string>();
         public static List<string> GRO = new List<string>();
         public static List<string> Copy = new List<string>();
-<<<<<<< HEAD
-        public static List<string> PELC = new List<string>();
-        public static List<string> PCLO = new List<string>();
-        public static List<string> PGRO = new List<string>();
-=======
+
         public static List<float> PELC = new List<float>();
         public static List<float> PCLO = new List<float>();
         public static List<float> PGRO = new List<float>();
 
->>>>>>> 3e4b1dadbd6df451846e93de5f8bcb64fa2943f1
+
         public Form4()
         {
             InitializeComponent();
@@ -33,8 +29,7 @@ namespace mall
 
         private void Form4_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-=======
+
             ELC.Add("Laptop 1000$");
             PELC.Add(1000);
             ELC.Add("Mobile1000$");
@@ -59,7 +54,7 @@ namespace mall
             PGRO.Add(2);
             GRO.Add("Salt1$");
             PGRO.Add(1);
->>>>>>> 3e4b1dadbd6df451846e93de5f8bcb64fa2943f1
+
 
 
         }
