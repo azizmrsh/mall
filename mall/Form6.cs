@@ -64,38 +64,27 @@ namespace mall
 
         private void Form6_Load(object sender, EventArgs e)
         {
-            dep.Add("Electronic");  //1
-            dep.Add("Clothes");    //2
-            dep.Add("Grosery");   //3
+            comboBox1.Items.Add("Electronic");  //1
+            comboBox1.Items.Add("Clothes");    //2
+            comboBox1.Items.Add("Grosery");   //3
 
-            emi.Add("11");
-            emp.Add("1111");
-            emi.Add("12");
-            emp.Add("1212");
-            emi.Add("21");
-            emp.Add("2121");
-            emi.Add("22");
-            emp.Add("2222");
-            emi.Add("31");
-            emp.Add("3131");
-            emi.Add("32");
-            emp.Add("3232");
+            
 
-            if (comboBox1.SelectedItem.ToString()[0] == '1')
-            {
-                textBox2.Text = "Electronic";
+            //if (comboBox1.SelectedItem.ToString()[0] == '1')
+            //{
+            //    textBox2.Text = "Electronic";
                 
-            }
-            else if (comboBox1.SelectedItem.ToString()[0] == '2')
-            {
-                textBox2.Text = "Clothes";
+            //}
+            //else if (comboBox1.SelectedItem.ToString()[0] == '2')
+            //{
+            //    textBox2.Text = "Clothes";
                
-            }
-            else if (comboBox1.SelectedItem.ToString()[0] == '3')
-            {
-                textBox2.Text = "Grosery";
+            //}
+            //else if (comboBox1.SelectedItem.ToString()[0] == '3')
+            //{
+            //    textBox2.Text = "Grosery";
                 
-            }
+            //}
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -107,6 +96,26 @@ namespace mall
         {
             if (emi.Contains(textBox1.Text) == false)
             {
+                if(comboBox1.SelectedIndex == 0)
+                {
+                    textBox2 .Text =comboBox1.SelectedItem.ToString();
+                    textBox1.Text = "1" + textBox1.Text;
+                }
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    textBox2.Text = comboBox1.SelectedItem.ToString();
+                    textBox1.Text = "2" + textBox1.Text;
+                }
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    textBox2.Text = comboBox1.SelectedItem.ToString();
+                    textBox1.Text = "3" + textBox1.Text;
+                }
+                else 
+                {
+                    MessageBox.Show("Please select a valid department.");
+                }
+
                 emi.Add(textBox1.Text);
                 emp.Add(textBox2.Text);
                 listBox1.Items.Add(textBox1.Text);
@@ -114,6 +123,35 @@ namespace mall
             
             else
                 MessageBox.Show("User already exists");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex >= 0)
+            {
+                emi.RemoveAt(listBox1.SelectedIndex);
+                emp.RemoveAt(listBox1.SelectedIndex);
+                listBox1.Items.RemoveAt(listBox1.SelectedIndex);
+            }
+            else
+                MessageBox.Show("Please select a user to be deleted");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex > -1)
+            {
+                emp[listBox1.SelectedIndex] = textBox2.Text;
+                MessageBox.Show("The Employee updated successfuly");
+            }
+            else
+                MessageBox.Show("Please select a Employee to be updated");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form1.f1.Show();
+            this.Close();
         }
     }
 }

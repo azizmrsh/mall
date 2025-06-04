@@ -17,9 +17,22 @@ namespace mall
             InitializeComponent();
         }
 
+        public static String urn;
+        public static String urp;
         private void Form2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1.usn.Add(textBox1.Text);
+            Form1.usp.Add(textBox2.Text);
+            urn = textBox1.Text;
+            urp = textBox2.Text;
+
+            Form1.f1.Show();
+            this.Close();
         }
     }
 }

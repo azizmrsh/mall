@@ -23,7 +23,9 @@ namespace mall
             {
                 listBox1.Items.Add(Form4.Copy[i]);
             }
-            
+            label5.Text = "Delivery price : " + (Form3.total * 0.01).ToString("$");
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,7 +45,7 @@ namespace mall
 
         private void label4_Click(object sender, EventArgs e)
         {
-            label4.Text = "Delivery price : " + (Form3.total * 0.01).ToString("$");
+           
 
         }
 
@@ -57,6 +59,11 @@ namespace mall
         {
             Form1.f1.Show();
             this.Close();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            label5.Text = "Delivery price : " + (Form3.total * 0.01).ToString("$");
         }
     }
 }
